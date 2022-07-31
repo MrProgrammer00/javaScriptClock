@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    transition: all .2s;
+}
+body{
+    background-color: #222;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    margin: 10px;
+}
+.container{
+    display: flex;
+    justify-content: baseline;
+    height: 100%;
+    overflow-y: hidden;
+}
+.hour, .minute, .second {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    padding-top: 40vh;
+    margin: 0px 5px 0px 5px;
+}
+.stick{
+    background-color: #696969;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 1px 1px 20px 1px #000;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0px 30px 0px 30px ;
+}
+.stick > li {
+    height: 35px;
+}
+.twoDots{
+    font-size: 50px;
+    color: #696969;
+    height: 50%;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #000;
+    margin-top: 40vh;
+}
+.active{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: rgba(204, 204, 204, 0.555);
+    box-shadow: 1px 1px 10px 2px  rgba(255, 255, 255, 0.445); 
+    backdrop-filter: blur( 1.1px );
+    -webkit-backdrop-filter: blur( 2.0px );
+    border-radius: 100%;
+    border: 1px solid rgba(75, 74, 74, 0.151);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family:  'Roboto', sans-serif;
+    text-shadow: 1px 1px 3px #fff;
+    margin-top: 1px;
+}
+.secondFirstStick{
+    height: 350px;
+}
+.secondSecondStick{
+    height: 210px;
+}
+.minuteFirstStick{
+    height: 350px;
+}
+.minuteSecondStick{
+    height: 210px;
+}
+.hourFirstStick{
+    height: 350px;
+}
+.hourSecondStick{
+    height: 110px;
+}
